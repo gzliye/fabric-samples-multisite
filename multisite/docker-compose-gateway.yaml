@@ -116,19 +116,19 @@ services:
     image: nginx
     container_name: peer0.org2.example.com
     volumes:
-        - /root/fabric-samples/first-network/multisite/peer0_org2_nginx.conf:/etc/nginx/nginx.conf
+        - ./peer0_org2_nginx.conf:/etc/nginx/nginx.conf
 
   peer1.org2.example.com:
     image: nginx
     container_name: peer1.org2.example.com
     volumes:
-        - /root/fabric-samples/first-network/multisite/peer1_org2_nginx.conf:/etc/nginx/nginx.conf
+        - ./peer1_org2_nginx.conf:/etc/nginx/nginx.conf
       
   gateway.example.com:
     image: nginx
     container_name: gateway.example.com
     volumes:
-        - /root/fabric-samples/first-network/multisite/gateway_nginx.conf:/etc/nginx/nginx.conf
+        - ./gateway_nginx.conf:/etc/nginx/nginx.conf
     ports:
       - 7050:7050
       - 7051:7051
