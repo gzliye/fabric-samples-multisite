@@ -477,13 +477,13 @@ CLI_DELAY=3
 # channel name defaults to "mychannel"
 CHANNEL_NAME="mychannel"
 # use this as the default docker-compose yaml definition
-COMPOSE_FILE=docker-compose-cli-site1/.yaml
+COMPOSE_FILE=docker-compose-cli-site1.yaml
 #
-COMPOSE_FILE_COUCH=docker-compose-couch-site1/.yaml
+COMPOSE_FILE_COUCH=docker-compose-couch-site1.yaml
 # org3 docker compose file
-COMPOSE_FILE_ORG3=docker-compose-org3-site1/.yaml
+COMPOSE_FILE_ORG3=docker-compose-org3-site1.yaml
 # kafka and zookeeper compose file
-COMPOSE_FILE_KAFKA=docker-compose-kafka-site1/.yaml
+COMPOSE_FILE_KAFKA=docker-compose-kafka-site1.yaml
 #
 # use golang as the default language for chaincode
 LANGUAGE=golang
