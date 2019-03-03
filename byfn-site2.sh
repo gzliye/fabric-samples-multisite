@@ -151,11 +151,11 @@ function checkPrereqs() {
 function networkUp() {
   checkPrereqs
   # generate artifacts if they don't exist
-  if [ ! -d "crypto-config" ]; then
-    generateCerts
-    replacePrivateKey
-    generateChannelArtifacts
-  fi
+#  if [ ! -d "crypto-config" ]; then
+#    generateCerts
+#    replacePrivateKey
+#    generateChannelArtifacts
+#  fi
   if [ "${IF_COUCHDB}" == "couchdb" ]; then
     if [ "$CONSENSUS_TYPE" == "kafka" ]; then
       IMAGE_TAG=$IMAGETAG docker-compose -f $COMPOSE_FILE -f $COMPOSE_FILE_KAFKA -f $COMPOSE_FILE_COUCH up -d 2>&1
