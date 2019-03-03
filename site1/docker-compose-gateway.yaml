@@ -87,6 +87,8 @@ services:
   gateway.example.com:
     image: nginx
     container_name: gateway.example.com
+    extra_hosts:
+      - "site2:192.168.0.12"
     volumes:
         - ./gateway_nginx.conf:/etc/nginx/nginx.conf
     ports:
