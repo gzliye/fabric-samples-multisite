@@ -10,6 +10,7 @@ services:
   orderer.example.com:
     container_name: orderer.example.com
     image: nginx
+    volumes:
         - ./orderer_nginx.conf:/etc/nginx/nginx.conf
 
   peer0.org1.example.com:
