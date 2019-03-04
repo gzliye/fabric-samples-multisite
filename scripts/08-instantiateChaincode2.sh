@@ -41,12 +41,8 @@ echo "Channel name : "$CHANNEL_NAME
 echo "Installing chaincode on peer1.org2..."
 installChaincode 1 2
 
-# Query on chaincode on peer1.org2, check if the result is 90
-echo "Querying chaincode on peer1.org2..."
-chaincodeQuery 1 2 90
-
 echo
-echo "========= All GOOD, Verify on peer1.org2 execution completed =========== "
+echo "========= All GOOD, Installing chaincode on peer1.org2 execution completed =========== "
 echo
 
 echo

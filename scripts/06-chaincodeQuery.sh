@@ -34,7 +34,7 @@ echo "Querying chaincode on peer0.org1..."
 chaincodeQuery $PEER $ORG $EXPECTED_RESULT
 
 echo
-echo "========= All GOOD, Querying chaincode on peer0.org1 execution completed =========== "
+echo "========= All GOOD, Querying chaincode on peer${PEER}.org${ORG} execution completed =========== "
 echo
 
 echo
