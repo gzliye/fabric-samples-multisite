@@ -481,9 +481,9 @@ COMPOSE_FILE=docker-compose-cli-site2.yaml
 #
 COMPOSE_FILE_COUCH=docker-compose-couch-site2.yaml
 # org3 docker compose file
-COMPOSE_FILE_ORG3=docker-compose-org3-site2.yaml
+COMPOSE_FILE_ORG3=docker-compose-org3.yaml
 # kafka and zookeeper compose file
-COMPOSE_FILE_KAFKA=docker-compose-kafka-site2.yaml
+COMPOSE_FILE_KAFKA=docker-compose-kafka.yaml
 #
 # use golang as the default language for chaincode
 LANGUAGE=golang
